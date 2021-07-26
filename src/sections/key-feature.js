@@ -3,10 +3,10 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+import Performance from 'assets/key-feature/iconfinder-icon (5).svg';
+import Partnership from 'assets/key-feature/iconfinder-icon (6).svg';
+import Subscription from 'assets/key-feature/iconfinder-icon (8).svg';
+import Support from 'assets/key-feature/iconfinder-icon (9).svg';
 
 const data = [
   {
@@ -48,8 +48,8 @@ export default function KeyFeature() {
    <section sx={{ variant:'section.keyFeature'}}>
      <Container>
       <SectionHeader
-        slogan="Whats new"
-        title="Roflmao motherfuck"  
+        slogan="¿Que hacemos?"
+        title="Un resumen de nuestras habilidades y actividades en el mercado inmobiliario"  
       />
       <Grid sx={styles.grid}>
         {data.map(item=>(

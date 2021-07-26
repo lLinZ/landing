@@ -32,7 +32,7 @@ export default function Header({ className }) {
             variant='secondary' 
             aria-label='Get started'
           >
-            Get started
+            Explorar
           </Button>
           <MobileDrawer/>
         </Container>

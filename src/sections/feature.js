@@ -3,10 +3,10 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Performance from 'assets/feature/performance.svg';
-import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
-import Support from 'assets/feature/support.svg';
+import Performance from 'assets/feature/iconfinder-icon (5).svg';
+import Partnership from 'assets/feature/iconfinder-icon (6).svg';
+import Subscription from 'assets/feature/iconfinder-icon (8).svg';
+import Support from 'assets/feature/iconfinder-icon (9).svg';
 
 const data = [
   {
@@ -45,7 +45,25 @@ const data = [
 
 export default function Feature() {
   return (
-   <h1>Feature</h1>
+   <section sx={{ variant: 'section.feature'}} id="feature">
+     <Container>
+       <SectionHeader
+        slogan='Quality Features'
+        title='Amazing useful features'
+       />
+       <Grid sx={ styles.grid }>
+        {data.map((item)=>(
+          <FeatureCard
+            key={item.id}
+            src={item.imgSrc}
+            alt={item.altText}
+            title={item.title}
+            text={item.text}
+          />
+        ))}
+       </Grid>
+     </Container>
+   </section>
   );
 }
 
