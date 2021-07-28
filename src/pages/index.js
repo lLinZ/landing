@@ -18,14 +18,14 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="CONSOLITEX® | BIENES RAÍCES" />
           <Banner />
           <KeyFeature />
           <ServiceSection />
-          <Feature />
+          {/* <Feature /> */}
           <CoreFeature />
-          <WorkFlow />
-          <Package />
+          {/* <WorkFlow /> */}
+          {/* <Package /> */}
           <TeamSection />
           <TestimonialCard />
         </Layout>

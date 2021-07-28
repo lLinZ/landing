@@ -7,25 +7,9 @@ import ShapeRight from 'assets/shape-right.png';
 import { useEffect } from 'react';
 
 export default function Banner() {
-//   const getUnits   =  async()  =>{
-//     const url       =   `https://consolitex.org/_Bienes_Raices/api.php?i=0&q=mañongo`;
-//     const resp      =   await fetch(url, {method:'POST'});
-//     const data      =   await resp.json();
-//     const gifs      =   data.map( img => {
-//         return  {
-//             id      :   img.id,
-//             nombre   :   img.nombre,
-//             precio     :   img.precio
-//         }
-//     })
-//     return gifs;
-// }
-// useEffect(() => {
-//     getUnits()
-//     .then((data)=>data.map(u=>console.log(u)))
-// }, [])
+
   return (
-    <section sx={styles.banner} id='home'>
+    <section sx={styles.banner} id='inicio'>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">

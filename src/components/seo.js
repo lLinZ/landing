@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup product landing page',
-  author = 'JSM',
+  description = 'Pagina principal de Consolitex Bienes Raices, la empresa mas importante en el sector inmobiliario en Venezuela',
+  author = 'LinZ Development',
   meta,
-  title = 'startup landing title',
+  title = 'Consolitex landing page',
 }) {
   const metaData = [
     {
@@ -44,6 +44,7 @@ export default function SEO({
   
   return (
     <Head>
+      <link rel="shortcut icon" href="consolitex.ico" type="image/x-icon"></link>
       <title>{title}</title>
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
@@ -53,6 +54,6 @@ export default function SEO({
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `es`,
   meta: [],
 };
