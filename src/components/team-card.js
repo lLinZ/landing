@@ -20,7 +20,6 @@ export default function TeamCard({ src, altText, title, designation, social }) {
            {item.icon}
          </Link>
        ))}
-
      </Box>
     </Box>
   );
@@ -57,7 +56,7 @@ const styles = {
     width: ['70px', '80px', '100px', null, null, '130px'],
     height: ['70px', '80px', '100px', null, null, '130px'],
     flexShrink: 0,
-    border: '2px solid',
+    border: 'none',
     borderColor: 'primary',
     borderRadius: '50%',
   },

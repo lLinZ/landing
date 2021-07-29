@@ -6,32 +6,27 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
+import ServiceThumb from 'assets/Imagen2.png';
 import shapePattern from 'assets/shape-pattern1.png';
 
-import Smart from 'assets/services/smart.svg';
+import Smart from 'assets/services/iconfinder-icon (10).svg';
 import Secure from 'assets/services/secure.svg';
 import { FaVectorSquare } from 'react-icons/fa';
 
 const data = {
   subTitle: 'Nuestros servicios',
-  title: '¡La mejor asesoría, atención y servicio para obtener el inmueble de tus sueños!',
+  title: '¡La mejor asesoría, atención y servicio!',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Un poco de nosotros',
+      title: 'Un poco de nosotros',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
-    },
-    {
-      id: 2,
-      imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        `Acorde con una filosofía de trabajo fundamentada en la estrecha relación con los clientes
+         y un conocimiento profundo del mercado inmobiliario, CONSOLITEX® BIENES RAICES se encuentra
+          posicionada hoy en día como la organización de mayor importancia en la administración, promoción
+           y venta de propiedades inmobiliarias del centro del país.`,
     },
   ],
 };

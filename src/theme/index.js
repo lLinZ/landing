@@ -202,6 +202,18 @@ export default {
     default: {
       cursor: 'pointer',
     },
+    whiteabutton:{
+      textDecoration:'none',
+      color:'white',
+    },
+    abutton:{
+      textDecoration:'none',
+      width:'100%',
+      color:'primary',
+      '&:hover': {
+        color: 'white',
+      },
+    },
     bold: {
       fontWeight: 'bold',
     },
@@ -265,6 +277,7 @@ export default {
       '&:hover': {
         boxShadow: 'rgba(84, 76, 233, 0.57) 0px 9px 20px -5px',
       },
+
     },
     whiteButton: {
       variant: 'buttons.defaultBtn',

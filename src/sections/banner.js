@@ -1,13 +1,13 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/h1.jpg';
+import { Container, Box, Heading, Text, Image, Button, Link } from 'theme-ui';
+import BannerImg from 'assets/banner.jpg';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 import { useEffect } from 'react';
+import { Link as NavLink }  from 'components/link';
 
 export default function Banner() {
-
   return (
     <section sx={styles.banner} id='inicio'>
       <Container sx={styles.banner.container}>
@@ -18,9 +18,15 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
             En nuestro sitio web, encontrarás ese inmueble con el que tanto sueñas. ¡Trabajamos duro para conseguir lo que buscan nuestros clientes! 
           </Text>
-          <Button variant="primary">
-            Ver mas...
-          </Button>
+          <Link href={'/search'} variant='default'>
+            <Button 
+              className='donate__btn' 
+              variant='primary' 
+              aria-label='Encuentralo'
+              >
+              Encuentralo
+            </Button>
+          </Link>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt='banner'/>

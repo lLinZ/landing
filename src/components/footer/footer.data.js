@@ -2,23 +2,15 @@ export default {
   menuItem: [
     {
       path: '/',
-      label: 'Home',
+      label: 'Inicio',
     },
     {
-      path: '/',
-      label: 'Adversite',
+      path: 'https://consolitex.org/Bienes_Raices/access.php',
+      label: 'Acceso ejecutivo',
     },
     {
-      path: '/',
-      label: 'Supports',
-    },
-    {
-      path: '/',
-      label: 'Marketing',
-    },
-    {
-      path: '/',
-      label: 'Contact',
+      path: 'https://consolitex.org/condos',
+      label: 'Condominios',
     },
   ],
 };

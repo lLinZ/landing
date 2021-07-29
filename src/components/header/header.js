@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Link as ButtonLink } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
@@ -27,13 +27,15 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <Button 
-            className='donate__btn' 
-            variant='secondary' 
-            aria-label='Get started'
-          >
-            Explorar
-          </Button>
+          <ButtonLink href={'/search'} variant='default'>
+            <Button 
+              className='donate__btn' 
+              variant='secondary' 
+              aria-label='Encuentralo'
+              >
+              Encuentralo
+            </Button>
+          </ButtonLink>
           <MobileDrawer/>
         </Container>
       </header>
@@ -107,4 +109,12 @@ const styles = {
       },
     },
   },
+  buttonLink:{
+    textDecoration:'none',
+    color:'primary',
+    '&:hover': {
+      color: '#FFF',
+    },
+
+  }
 };

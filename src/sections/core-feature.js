@@ -2,16 +2,16 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/Imagen3.png';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'Encuentralo',
+  title: 'Realiza tu inversión en el área inmobiliaria',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
-  btnURL: '#',
+    'Casas, quintas, townhouses, penthouses, locales, galpones, terrenos, oficinas, compra, venta o alquiler. Seguimos apostando a que el éxito es ayudar a consolidar sueños y metas. Haciendo de cada camino una historia y de cada historia un testimonio de una persona o familia feliz.',
+  btnName: '¡Encuentralo!',
+  btnURL: '/search',
 };
 
 export default function CoreFeature() {
